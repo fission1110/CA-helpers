@@ -1,0 +1,28 @@
+# This generates a root CA, and intermediate CA, then signs a certificate
+echo ""
+echo ""
+echo ""
+echo ""
+echo " ------------------- GENERATE ROOT CERTIFICATE AUTHORITY ------------------- "
+echo ""
+echo ""
+echo ""
+./generate_root_ca.sh
+echo ""
+echo ""
+echo ""
+echo ""
+echo " ------------------- GENERATE INTERMEDIATE CERTIFICATE AUTHORITY ------------------- "
+echo ""
+echo ""
+echo ""
+./generate_intermediate_ca.sh
+echo ""
+echo ""
+echo ""
+echo ""
+echo " ------------------- GENERATE SITE CERTIFICATE ------------------- "
+echo ""
+echo ""
+echo ""
+./generate_and_sign.sh site
